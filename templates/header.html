@@ -1,0 +1,100 @@
+<div id="header-container">
+    <div id="header">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                    <!-- <a class="brand" href="javascript:void(0);"><img src="/static/img/demo/logo-brand.png"></a> -->
+                    <div class="search-global">
+                        <input id="globalSearch" class="search search-query input-medium" type="search">
+                        <a class="search-button" href="javascript:void(0);"><i class="fontello-icon-search-5"></i></a>
+                    </div>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav user-menu visible-desktop">
+                            <li>
+                                <a class="btn-glyph fontello-icon-mail-1 tip-bc" href="javascript:void(0);"
+                                   title="Signals">
+                                    {% if unapproved_signals_count > 0 %}
+                                        <span class="badge badge-important">{{ unapproved_signals_count }}</span>
+                                    {% endif %}
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li {% if request.get_full_path == '/' %} class="active"{% endif %}>
+                                <a href="/">
+                                    <i class="fontello-icon-right-dir"></i>
+                                    <span class="hidden-tablet">Dashboard</span>
+                                </a>
+                            </li>
+                            <li {% if request.get_full_path == '/summary' %} class="active"{% endif %}>
+                                <a href="/summary">
+                                    <i class="fontello-icon-right-dir"></i>
+                                    <span class="hidden-tablet">Summary</span>
+                                </a>
+                            </li>
+                            <li {% if request.get_full_path == '/live' %} class="active"{% endif %}>
+                                <a href="/live">
+                                    <i class="fontello-icon-right-dir"></i>
+                                    <span class="hidden-tablet">Live</span>
+                                </a>
+                            </li>
+                            <li {% if request.get_full_path == '/recent' %} class="active"{% endif %}>
+                                <a href="/recent">
+                                    <i class="fontello-icon-right-dir"></i>
+                                    <span class="hidden-tablet">Recently approved</span>
+                                </a>
+                            </li>
+                            <li {% if request.get_full_path == '/chart' %} class="active"{% endif %}>
+                                <a href="/chart">
+                                    <i class="fontello-icon-right-dir"></i>
+                                    <span class="hidden-tablet">Chart</span>
+                                </a>
+                            </li>
+                            <li {% if request.get_full_path == '/calc' %} class="active"{% endif %}>
+                                <a href="/calc">
+                                    <i class="fontello-icon-right-dir"></i>
+                                    <span class="hidden-tablet">Calculator</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/admin">Admin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // navbar -->
+
+        {% comment %}
+            <div class="header-drawer">
+                <div class="mobile-nav text-center visible-phone"><a href="javascript:void(0);" class="mobile-btn"
+                                                                     data-toggle="collapse" data-target=".sidebar"><i
+                        class="aweso-icon-chevron-down"></i> Components</a></div>
+                <!-- // Resposive navigation -->
+                <div class="breadcrumbs-nav hidden-phone">
+                    <ul id="breadcrumbs" class="breadcrumb">
+                        <li class="active"><a href="javascript:void(0);"><i class="fontello-icon-home f12"></i>
+                            Dashboard</a></li>
+                        <li class="dropdown"><a href="javascript:void(0);">Table </a> <span class="divider">/</span>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0);">Table</a></li>
+                                <li><a href="javascript:void(0);">Elements</a></li>
+                                <li><a href="javascript:void(0);">Elements</a></li>
+                                <li><a href="javascript:void(0);">Elements</a></li>
+                            </ul>
+                        </li>
+                        <li class="active">Boo Admin</li>
+
+                    </ul>
+                </div>
+                <!-- // breadcrumbs -->
+            </div>
+            <!-- // drawer -->
+        {% endcomment %}
+    </div>
+</div>
+<!-- // header-container -->

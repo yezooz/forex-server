@@ -1,0 +1,90 @@
+{% extends "common.html" %}
+
+{% block js %}
+    <script type="text/javascript">
+        var approveSignal = function (signal_id) {
+            console.log('Approved ' + signal_id);
+            $.get('/action?signal_id=' + signal_id + '&action=approve');
+            $('#signal_' + signal_id).remove();
+        }
+
+        var declineSignal = function (signal_id) {
+            console.log('Declined ' + signal_id);
+            $.get('/action?signal_id=' + signal_id + '&action=decline');
+            $('#signal_' + signal_id).remove();
+        }
+    </script>
+{% endblock js %}
+
+{% block content %}
+
+    <div style="padding-left: 20px;">
+
+        <div id="page-content" class="page-content">
+            <script>
+                var pairs = {
+                    {% for pair in pairs %}
+                        {% if pair.pip_worth_usd > 0 %}
+                            '{{ pair.name }}': [{{ pair.pip_value }}, {{ pair.pip_worth_usd }}, {{ pair.pip_worth_gbp }}],
+                        {% endif %}
+                    {% endfor %}
+                };
+
+                var calculate = function () {
+                    var pair = pairs[$('#pair').val()];
+                    var risk = parseFloat($('#risk').val());
+                    var account = parseFloat($('#account').val());
+                    var pips = parseFloat($('#pips').val()) * pair[1];
+                    var result = (account * risk * pair[0]) / pips;
+
+                    if (pair[0] == 0.01)
+                        result /= 1000;
+                    else
+                        result /= 10;
+
+                    $('#result').text(result.toFixed(1) + " lots ($" + (account * risk).toFixed(0) + ")");
+                }
+
+            </script>
+
+            <h2>Calculator</h2>
+
+            <p>
+                <select id="pair">
+                    {% for pair in pairs %}
+                        {% if pair.pip_worth_usd > 0 %}
+                            <option value="{{ pair.name }}">{{ pair.name }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </p>
+            <p>
+                <input type="text" value="10" id="pips"/> pips
+            </p>
+
+            <p>
+                <input type="text" value="2000" id="account"/> USD
+            </p>
+
+            <p>
+                <select id="risk">
+                    <option value="0.05">5%</option>
+                    <option value="0.10" selected="selected">10%</option>
+                    <option value="0.15">15%</option>
+                    <option value="0.20">20%</option>
+                    <option value="0.25">25%</option>
+                    <option value="0.30">30%</option>
+                </select>
+            </p>
+            <p>
+                <input type="button" onclick="calculate()" value="Calculate"/>
+            </p>
+
+            <h3 style="color: red" id="result">&nbsp;</h3>
+        </div>
+        <!-- // page content -->
+
+    </div>
+    <!-- // main-content -->
+
+{% endblock content %}

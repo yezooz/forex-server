@@ -1,0 +1,1 @@
+Closed {{ pair }} {{ tf }} [{{ system }}] (${{ total_net }})

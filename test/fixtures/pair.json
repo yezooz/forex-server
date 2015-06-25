@@ -1,0 +1,1877 @@
+[
+  {
+    "pk": 1,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURUSD",
+      "pip_worth_usd": "0.00010",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:06:29",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:00",
+      "spread": "0.00019",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GBPUSD",
+      "pip_worth_usd": "0.00010",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:06:37",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:02",
+      "spread": "0.00024",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDCHF",
+      "pip_worth_usd": "0.00011",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:06:45",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:03",
+      "spread": "0.00026",
+      "pip_worth_gbp": "0.00007"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDJPY",
+      "pip_worth_usd": "0.00010",
+      "point": 2,
+      "pip_value": "0.01000",
+      "created_at": "2012-06-09T12:06:52",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:01",
+      "spread": "0.00019",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "writer.pair",
+    "fields": {
+      "name": "AUDUSD",
+      "pip_worth_usd": "0.00010",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:07:00",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:03",
+      "spread": "0.00022",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDCAD",
+      "pip_worth_usd": "0.00009",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:07:08",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:03",
+      "spread": "0.00027",
+      "pip_worth_gbp": "0.00005"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURGBP",
+      "pip_worth_usd": "0.00017",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:07:15",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:00",
+      "spread": "0.00033",
+      "pip_worth_gbp": "0.00010"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURJPY",
+      "pip_worth_usd": "0.00010",
+      "point": 2,
+      "pip_value": "0.01000",
+      "created_at": "2012-06-09T12:07:23",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:01",
+      "spread": "0.03000",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURCAD",
+      "pip_worth_usd": "0.00009",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:07:30",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:00",
+      "spread": "0.00039",
+      "pip_worth_gbp": "0.00005"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURAUD",
+      "pip_worth_usd": "0.00009",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:07:39",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:01",
+      "spread": "0.00035",
+      "pip_worth_gbp": "0.00005"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GBPCHF",
+      "pip_worth_usd": "0.00011",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:07:45",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:01",
+      "spread": "0.00050",
+      "pip_worth_gbp": "0.00007"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GBPJPY",
+      "pip_worth_usd": "0.00010",
+      "point": 2,
+      "pip_value": "0.01000",
+      "created_at": "2012-06-09T12:07:51",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:01",
+      "spread": "0.03900",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "writer.pair",
+    "fields": {
+      "name": "CHFJPY",
+      "pip_worth_usd": "0.00010",
+      "point": 2,
+      "pip_value": "0.01000",
+      "created_at": "2012-06-09T12:07:57",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:01",
+      "spread": "0.03900",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "writer.pair",
+    "fields": {
+      "name": "AUDCAD",
+      "pip_worth_usd": "0.00009",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:08:03",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:02",
+      "spread": "0.00039",
+      "pip_worth_gbp": "0.00005"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "writer.pair",
+    "fields": {
+      "name": "AUDJPY",
+      "pip_worth_usd": "0.00010",
+      "point": 2,
+      "pip_value": "0.01000",
+      "created_at": "2012-06-09T12:08:09",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:01",
+      "spread": "0.03500",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "writer.pair",
+    "fields": {
+      "name": "CADJPY",
+      "pip_worth_usd": "0.00010",
+      "point": 2,
+      "pip_value": "0.01000",
+      "created_at": "2012-06-09T12:08:13",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:02",
+      "spread": "0.03500",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "writer.pair",
+    "fields": {
+      "name": "NZDJPY",
+      "pip_worth_usd": "0.00010",
+      "point": 2,
+      "pip_value": "0.01000",
+      "created_at": "2012-06-09T12:08:20",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:02",
+      "spread": "0.04500",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GBPCAD",
+      "pip_worth_usd": "0.00009",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:09:11",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:01",
+      "spread": "0.00060",
+      "pip_worth_gbp": "0.00005"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURNZD",
+      "pip_worth_usd": "0.00008",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:10:20",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:00",
+      "spread": "0.00080",
+      "pip_worth_gbp": "0.00005"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "writer.pair",
+    "fields": {
+      "name": "AUDCHF",
+      "pip_worth_usd": "0.00011",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:10:30",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:02",
+      "spread": "0.00045",
+      "pip_worth_gbp": "0.00007"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GBPAUD",
+      "pip_worth_usd": "0.00009",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:10:40",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:02",
+      "spread": "0.00060",
+      "pip_worth_gbp": "0.00005"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "writer.pair",
+    "fields": {
+      "name": "CADCHF",
+      "pip_worth_usd": "0.00011",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-06-09T12:10:50",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:03",
+      "spread": "0.00055",
+      "pip_worth_gbp": "0.00007"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "writer.pair",
+    "fields": {
+      "name": "NZDUSD",
+      "pip_worth_usd": "0.00010",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2012-07-01T17:03:06",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:00",
+      "spread": "0.00040",
+      "pip_worth_gbp": "0.00006"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GBPNZD",
+      "pip_worth_usd": "0.00008",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2013-03-06T23:03:03",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:02",
+      "spread": "0.00020",
+      "pip_worth_gbp": "0.00005"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "writer.pair",
+    "fields": {
+      "name": "AUDNZD",
+      "pip_worth_usd": "0.00008",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2013-03-06T23:04:05",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:00",
+      "spread": "0.00020",
+      "pip_worth_gbp": "0.00005"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "writer.pair",
+    "fields": {
+      "name": "NZDCAD",
+      "pip_worth_usd": "0.00009",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2013-03-06T23:09:48",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:02",
+      "spread": "0.00020",
+      "pip_worth_gbp": "0.00005"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "writer.pair",
+    "fields": {
+      "name": "NZDCHF",
+      "pip_worth_usd": "0.00011",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2013-03-06T23:10:01",
+      "is_active": true,
+      "updated_at": "2014-02-17T20:00:00",
+      "spread": "0.00020",
+      "pip_worth_gbp": "0.00007"
+    }
+  },
+  {
+    "pk": 128,
+    "model": "writer.pair",
+    "fields": {
+      "name": "XAGUSD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2013-08-12T23:00:01",
+      "is_active": true,
+      "updated_at": "2013-08-12T23:00:01",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 129,
+    "model": "writer.pair",
+    "fields": {
+      "name": "XAUUSD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2013-08-12T23:00:01",
+      "is_active": true,
+      "updated_at": "2013-08-12T23:00:01",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 130,
+    "model": "writer.pair",
+    "fields": {
+      "name": "ESP35",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:00",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 131,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GER30",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:00",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 132,
+    "model": "writer.pair",
+    "fields": {
+      "name": "US30",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:00",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 133,
+    "model": "writer.pair",
+    "fields": {
+      "name": "ITA40",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:00",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 134,
+    "model": "writer.pair",
+    "fields": {
+      "name": "JPN225",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:00",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 135,
+    "model": "writer.pair",
+    "fields": {
+      "name": "NAS100",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:00",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 136,
+    "model": "writer.pair",
+    "fields": {
+      "name": "SWE30",
+      "pip_worth_usd": "0.00000",
+      "point": 2,
+      "pip_value": "0.01000",
+      "created_at": "2014-01-12T20:43:01",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 137,
+    "model": "writer.pair",
+    "fields": {
+      "name": "SPX500",
+      "pip_worth_usd": "0.00000",
+      "point": 2,
+      "pip_value": "0.01000",
+      "created_at": "2014-01-12T20:43:01",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 138,
+    "model": "writer.pair",
+    "fields": {
+      "name": "AUS200",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:01",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 139,
+    "model": "writer.pair",
+    "fields": {
+      "name": "FRA40",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:01",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 140,
+    "model": "writer.pair",
+    "fields": {
+      "name": "UK100",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:01",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 141,
+    "model": "writer.pair",
+    "fields": {
+      "name": "SUI30",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:01",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 142,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EUSTX50",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:02",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 143,
+    "model": "writer.pair",
+    "fields": {
+      "name": "XPDUSD",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:02",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 144,
+    "model": "writer.pair",
+    "fields": {
+      "name": "XPTUSD",
+      "pip_worth_usd": "0.00000",
+      "point": 1,
+      "pip_value": "0.10000",
+      "created_at": "2014-01-12T20:43:02",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:16",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 145,
+    "model": "writer.pair",
+    "fields": {
+      "name": "COPPER",
+      "pip_worth_usd": "0.00000",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2014-01-12T20:43:02",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:17",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 146,
+    "model": "writer.pair",
+    "fields": {
+      "name": "NGAS",
+      "pip_worth_usd": "0.00000",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2014-01-12T20:43:02",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:17",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 147,
+    "model": "writer.pair",
+    "fields": {
+      "name": "BUND",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:02",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:13",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 148,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USOIL",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:02",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:13",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 149,
+    "model": "writer.pair",
+    "fields": {
+      "name": "UKOIL",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:13",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 150,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDMXN",
+      "pip_worth_usd": "0.00000",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2014-01-12T20:43:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:13",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 151,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURCZK",
+      "pip_worth_usd": "0.00000",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2014-01-12T20:43:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:13",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 152,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDCZK",
+      "pip_worth_usd": "0.00000",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2014-01-12T20:43:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 153,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDZAR",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 154,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDSGD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 155,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDHKD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 156,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDDKK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 157,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURDKK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 158,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GBPSEK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 159,
+    "model": "writer.pair",
+    "fields": {
+      "name": "NOKJPY",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:04",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 160,
+    "model": "writer.pair",
+    "fields": {
+      "name": "SEKJPY",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:04",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 161,
+    "model": "writer.pair",
+    "fields": {
+      "name": "SGDJPY",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:04",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 162,
+    "model": "writer.pair",
+    "fields": {
+      "name": "HKDJPY",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:04",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 163,
+    "model": "writer.pair",
+    "fields": {
+      "name": "ZARJPY",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:04",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 164,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDTRY",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:04",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 165,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURTRY",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:04",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 166,
+    "model": "writer.pair",
+    "fields": {
+      "name": "CHFSEK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:04",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 167,
+    "model": "writer.pair",
+    "fields": {
+      "name": "CHFNOK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:04",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 168,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDRUB",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:04",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 169,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURHUF",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:05",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 170,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDHUF",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:05",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 171,
+    "model": "writer.pair",
+    "fields": {
+      "name": "TRYJPY",
+      "pip_worth_usd": "0.00000",
+      "point": 3,
+      "pip_value": "0.00100",
+      "created_at": "2014-01-12T20:43:05",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 172,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDILS",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00001",
+      "created_at": "2014-01-12T20:43:05",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 173,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDCNH",
+      "pip_worth_usd": "0.00000",
+      "point": 4,
+      "pip_value": "0.00010",
+      "created_at": "2014-01-12T20:43:05",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:44:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 174,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURNOK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:46:03",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:46:03",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 175,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURSEK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:46:13",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:46:13",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 176,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDSEK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:46:14",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:46:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 177,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDNOK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:46:14",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:46:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 178,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURPLN",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:46:15",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:46:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 179,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDPLN",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:46:15",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:46:15",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 180,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GOLD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:38",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:38",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 181,
+    "model": "writer.pair",
+    "fields": {
+      "name": "AUDPLN",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:38",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:38",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 182,
+    "model": "writer.pair",
+    "fields": {
+      "name": "SILVER",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:47",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:47",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 183,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GBPPLN",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:48",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:48",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 184,
+    "model": "writer.pair",
+    "fields": {
+      "name": "CHFPLN",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:48",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:48",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 185,
+    "model": "writer.pair",
+    "fields": {
+      "name": "PLNJPY",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:48",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:48",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 186,
+    "model": "writer.pair",
+    "fields": {
+      "name": "NOKSEK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:49",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:49",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 187,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GBPNOK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:49",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:49",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 188,
+    "model": "writer.pair",
+    "fields": {
+      "name": "AUDSGD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:49",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:49",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 189,
+    "model": "writer.pair",
+    "fields": {
+      "name": "CHFSGD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:49",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:49",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 190,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURHKD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:49",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:49",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 191,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURSGD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:50",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:50",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 192,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURZAR",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:50",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:50",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 193,
+    "model": "writer.pair",
+    "fields": {
+      "name": "GBPSGD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:50",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:50",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 194,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDHRK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:51",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:51",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 195,
+    "model": "writer.pair",
+    "fields": {
+      "name": "USDLTL",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:51",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:51",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 196,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURMXN",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T20:55:51",
+      "is_active": true,
+      "updated_at": "2014-01-12T20:55:51",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 197,
+    "model": "writer.pair",
+    "fields": {
+      "name": "EURRUB",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:05:14",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:05:14",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 198,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#MMM",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:54",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:54",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 199,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#AA",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:54",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:54",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 200,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#MO",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:55",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:55",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 201,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#AXP",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:55",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:55",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 202,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#BA",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:56",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:56",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 203,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#CAT",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:56",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:56",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 204,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#C",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:56",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:56",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 205,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#KO",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:57",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:57",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 206,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#DIS",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:57",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:57",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 207,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#DD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:57",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:57",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 208,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#XOM",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:57",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:57",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 209,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#GE",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:58",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:58",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 210,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#HPQ",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:58",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:58",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 211,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#HD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:58",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:58",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 212,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#HON",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:58",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:58",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 213,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#INTC",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:59",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:59",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 214,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#IBM",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:59",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:59",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 215,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#JPM",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:59",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:59",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 216,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#MCD",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:59",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:59",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 217,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#MRK",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:12:59",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:12:59",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 218,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#MSFT",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:13:00",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:13:00",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 219,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#UTX",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:13:00",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:13:00",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 220,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#AIG",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:13:00",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:13:00",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 221,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#WMT",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:13:00",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:13:00",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 222,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#T",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:13:01",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:13:01",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 223,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#JNJ",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:13:01",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:13:01",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 224,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#PFE",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:13:01",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:13:01",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  },
+  {
+    "pk": 225,
+    "model": "writer.pair",
+    "fields": {
+      "name": "#VZ",
+      "pip_worth_usd": "0.00000",
+      "point": 5,
+      "pip_value": "0.00000",
+      "created_at": "2014-01-12T21:13:01",
+      "is_active": true,
+      "updated_at": "2014-01-12T21:13:01",
+      "spread": "0.00000",
+      "pip_worth_gbp": "0.00000"
+    }
+  }
+]

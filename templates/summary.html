@@ -1,0 +1,78 @@
+{% extends "common.html" %}
+
+{% block content %}
+    <!-- // page head -->
+
+    <div id="page-content" class="page-content" style="margin-left: 15px; margin-right: 10px;">
+        <section>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="widget widget-recent">
+                        <div class="widget-header">
+                            <h4>Summary</h4>
+                        </div>
+                        <div class="widget-content">
+                            {% comment %}
+                                <div>
+                                    {% for status, arr in signals.items %}
+                                        <p>
+                                            <input type="checkbox" id="status_{{ status }}" value="{{ status }}"/>
+                                            <label for="status_{{ status }}">{{ status }}</label>
+                                        </p>
+                                    {% endfor %}
+                                </div>
+                            {% endcomment %}
+                            <div class="widget-body">
+                                <ul>
+                                    {% for status, arr in signals.items %}
+                                        <li>{{ status }}</li>
+                                        <ul data-status="{{ status }}">
+                                            {% for system, arr1 in arr.items %}
+                                                <li>{{ system }}</li>
+                                                <ul data-status="{{ status }}" data-system="{{ system }}">
+                                                    {% for tf, arr2 in arr1.items %}
+                                                        <li>{{ tf }}</li>
+                                                        <ul data-status="{{ status }}" data-system="{{ system }}"
+                                                            data-tf="{{ tf }}">
+                                                            {% for pair, arr3 in arr2.items %}
+                                                                <li>{{ pair }}</li>
+                                                                <ul data-status="{{ status }}"
+                                                                    data-system="{{ system }}" data-tf="{{ tf }}"
+                                                                    data-pair="{{ pair }}">
+                                                                    {% for signal in arr3 %}
+                                                                        <li data-signal-id="{{ signal.id }}"><a
+                                                                                href="/admin/fserver/signal/{{ signal.id }}/">{{ signal }}</a>
+                                                                        </li>
+                                                                        <ul>
+                                                                            {% for trade in signal.get_trades %}
+                                                                                <li>
+                                                                                    <a href="/admin/fserver/trade/{{ trade.id }}/">{{ trade.last_profit }}</a>
+                                                                                    ({{ trade.account }})
+                                                                                </li>
+                                                                            {% endfor %}
+                                                                        </ul>
+                                                                    {% endfor %}
+                                                                </ul>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endfor %}
+                                </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Widget -->
+                </div>
+                <!-- // column -->
+            </div>
+            <!-- // Example row -->
+        </section>
+    </div>
+    <!-- // page content -->
+
+
+{% endblock content %}

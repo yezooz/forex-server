@@ -1,0 +1,32 @@
+{% extends "common.html" %}
+
+{% block content %}
+    <!-- // page head -->
+
+    <div id="page-content" class="page-content" style="margin-left: 15px; margin-right: 10px;">
+        <section>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="widget widget-recent">
+                        <div class="widget-header">
+                            <h4>Summary</h4>
+                        </div>
+                        <div class="widget-content">
+                            <div class="widget-body">
+                                <ul>
+                                    {{ signal }}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Widget -->
+                </div>
+                <!-- // column -->
+            </div>
+            <!-- // Example row -->
+        </section>
+    </div>
+    <!-- // page content -->
+
+
+{% endblock content %}

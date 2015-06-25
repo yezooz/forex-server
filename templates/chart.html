@@ -1,0 +1,92 @@
+{% load mathfilters %}
+
+<li class="media media-overflow chart" id="signal_{{ signal.id }}">
+    <div class="media-right">
+        <div class="quick-menu">
+            <div class="btn-group">
+                {% if signal.status == 'ACCEPTED' %}
+                    <div class="btn-group">
+                        <a class="btn btn-mini btn-success" href="javascript:void(0);"
+                           onclick="winningSignal('{{ signal.id }}');">Profit</a>
+                        <a class="btn btn-mini btn-danger" href="javascript:void(0);"
+                           onclick="losingSignal('{{ signal.id }}');">Loss</a>
+                        <a class="btn btn-mini" href="javascript:void(0);" onclick="beSignal('{{ signal.id }}');">BE</a>
+                        <a class="btn btn-mini" href="javascript:void(0);" onclick="cancelSignal('{{ signal.id }}');">Not
+                            Activated</a>
+                        <a class="btn btn-mini btn-danger" href="javascript:void(0);"
+                           onclick="declineSignal('{{ signal.id }}');">Reject</a>
+                    </div>
+                {% else %}
+                    <a class="btn btn-mini btn-success" href="javascript:void(0);"
+                       onclick="approveSignal('{{ signal.id }}');">Approve</a>
+                    <a class="btn btn-mini btn-danger" href="javascript:void(0);"
+                       onclick="declineSignal('{{ signal.id }}');">Reject</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="media-body">
+        <ul class="data inline">
+            <li><strong>{{ signal.account_name }}</strong></li>
+            <li class="divider-vertical"></li>
+            <li>{{ signal.client_time|date:'Y-m-d' }} <strong title="{{ signal.client_time }}">
+                {{ signal.client_time|date:'H:i' }}</strong></li>
+            <li class="divider-vertical"></li>
+            <li><strong>{{ signal.pair }}</strong></li>
+            <li class="divider-vertical"></li>
+            <li><strong>{{ signal.tf }}</strong></li>
+            <li class="divider-vertical"></li>
+            <li><strong>{{ signal.system.name|upper }}</strong></li>
+        </ul>
+        <div>
+            <img src="{{ signal.get_chart }}" style="float: left; width: 800px; height: 600px;"/>
+
+            <div style="float: left; margin-left: 30px;">
+                {% for acc_id, acc_name in live_accounts.items %}
+                    <p>
+                        <input type="checkbox" name="signal_account_{{ acc_id }}" id="signal_account_{{ acc_id }}"
+                               {% if acc_id in signal.get_subscribed_accounts %}checked="checked"{% endif %}
+                               onchange="toggleAccount('{{ signal.id }}', '{{ acc_id }}')"/>
+                        <label for="signal_account_{{ accc_id }}" style="display: inline;">{{ acc_name }}</label>
+                    </p>
+                {% endfor %}
+                <p>
+                    Risk: <select name="risk" id="risk_for_{{ signal.id }}" onchange="changeRisk('{{ signal.id }}');"
+                                  style="width: 100px;">
+                    <option value="0.25" {% if signal.relative_risk == 0.25 %}selected="selected"{% endif %}>
+                        {{ signal.account.base_risk|mul:25|floatformat }}%
+                    </option>
+                    <option value="0.50" {% if signal.relative_risk == 0.50 %}selected="selected"{% endif %}>
+                        {{ signal.account.base_risk|mul:50|floatformat }}%
+                    </option>
+                    <option value="0.75" {% if signal.relative_risk == 0.75 %}selected="selected"{% endif %}>
+                        {{ signal.account.base_risk|mul:75|floatformat }}%
+                    </option>
+                    <option value="1.00" {% if signal.relative_risk == 1.0 %}selected="selected"{% endif %}>
+                        {{ signal.account.base_risk|mul:100|floatformat }}% (BASE)
+                    </option>
+                    <option value="1.50" {% if signal.relative_risk == 1.5 %}selected="selected"{% endif %}>
+                        {{ signal.account.base_risk|mul:150|floatformat }}%
+                    </option>
+                    <option value="2.00" {% if signal.relative_risk == 2.0 %}selected="selected"{% endif %}>
+                        {{ signal.account.base_risk|mul:200|floatformat }}%
+                    </option>
+                </select> ~{{ signal.calculate_lot_size|floatformat }} lot
+                </p>
+                <p>High: <input type="text" id="high_for_{{ signal.id }}" value="{{ signal.high }}"
+                                onblur="changeHigh('{{ signal.id }}');" style="width: 100px;"/></p>
+
+                <p>Low:&nbsp; <input type="text" id="low_for_{{ signal.id }}" value="{{ signal.low }}"
+                                     onblur="changeLow('{{ signal.id }}');" style="width: 100px;"/></p>
+                {% comment %}
+                    <p><input type="text" id="comment_for_{{ signal.id }}" value="{{ signal.comment }}"
+                              onblur="saveComment('{{ signal.id }}');" style="width: 300px;"/></p>
+                {% endcomment %}
+                <p>Spread: {{ signal.spread_in_pips }}</p>
+
+                <p>Size: {{ signal.size_in_pips }}</p>
+
+                <p>Size/spread: {{ signal.size_to_spread|floatformat:2 }}x</p>
+            </div>
+        </div>
+</li>

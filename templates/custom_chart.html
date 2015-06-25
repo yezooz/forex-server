@@ -1,0 +1,55 @@
+{% extends "common.html" %}
+
+{% block content %}
+
+    <div id="page-content" class="page-content">
+        <section>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="widget widget-recent">
+                        <div class="widget-header">
+                            <form action="/chart" method="get">
+                                <select name="pair" id="pair">
+                                    {% for pair in pairs %}
+                                        <option value="{{ pair.name }}"
+                                                {% if pair.name == selected_pair %}selected="selected"{% endif %}>{{ pair.name }}</option>
+                                    {% endfor %}
+                                </select>
+                                <select name="tf" id="tf">
+                                    {% for tf in tfs %}
+                                        <option value="{{ tf.0 }}"
+                                                {% if tf.0 == selected_tf %}selected="selected"{% endif %}>{{ tf.1 }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="submit" value="Load"/>
+                            </form>
+                        </div>
+                        <div class="widget-content">
+                            <div class="widget-body">
+                                <ul class="widget-list">
+                                    <img src="{{ path }}" style="float: left;"/>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Widget -->
+                </div>
+                <!-- // column -->
+            </div>
+            <!-- // Example row -->
+        </section>
+    </div>
+    <!-- // page content -->
+
+
+{% endblock content %}
+
+{% block js %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            {% if signal %}
+                {% include "chart.html" with signal=signal %}
+            {% endif %}
+        });
+    </script>
+{% endblock js %}

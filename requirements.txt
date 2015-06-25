@@ -1,0 +1,7 @@
+Django==1.6.1
+simplejson
+redis
+python-simple-hipchat
+django-mathfilters
+numpy
+ta-lib

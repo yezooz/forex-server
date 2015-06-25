@@ -1,0 +1,250 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}{% endblock title %}</title>
+
+    <link href="{{ STATIC_URL }}css/bundle.css" rel="stylesheet"/>
+    <script src="{{ STATIC_URL }}js/bundle.js"></script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		    <script src="{{ STATIC_URL }}plugins/selectivizr/selectivizr-min.js"></script>
+		    <script src="{{ STATIC_URL }}plugins/flot/excanvas.min.js"></script>
+		<![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="{{ STATIC_URL }}ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="{{ STATIC_URL }}ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="{{ STATIC_URL }}ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="{{ STATIC_URL }}ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ STATIC_URL }}ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body class="sidebar-left">
+<div class="page-container">
+    {% include "header.html" %}
+    <div id="main-container">
+        {% block content %}{% endblock content %}
+    </div>
+    {# {% include "footer.html" %} #}
+</div>
+
+<script>
+    $(document).on('keyup', null, 'j', function () {
+        $('html, body').animate({
+            scrollTop: $('.chart').next().position().top + $('#signal-container').position().top - 10
+        }, 250);
+    });
+
+    $(document).on('keyup', null, 'k', function () {
+        $('html, body').animate({
+            scrollTop: $('.chart').prev().position().top + $('#signal-container').position().top - 10
+        }, 250);
+    });
+
+    var approveSignal = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=approve');
+        $('#signal_' + signal_id).remove();
+    }
+
+    var declineSignal = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=decline');
+        $('#signal_' + signal_id).remove();
+    }
+
+    var cancelSignal = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=cancel');
+        $('#signal_' + signal_id).remove();
+    }
+
+    var winningSignal = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=profit');
+        $('#signal_' + signal_id).remove();
+    }
+
+    var losingSignal = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=loss');
+        $('#signal_' + signal_id).remove();
+    }
+
+    var beSignal = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=be');
+        $('#signal_' + signal_id).remove();
+    }
+
+    var saveComment = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=comment&comment=' + $('#comment_for_' + signal_id).val()).fail(function () {
+            alert('Failed to change comment!');
+        });
+    }
+
+    var changeRisk = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=risk&value=' + $('#risk_for_' + signal_id).val()).fail(function () {
+            alert('Failed to change risk!');
+        });
+    }
+
+    var changeSL = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=sl&value=' + $('#sl_for_' + signal_id).val()).fail(function () {
+            alert('Failed to change SL!');
+        });
+    }
+
+    var changeTP = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=tp&value=' + $('#tp_for_' + signal_id).val()).fail(function () {
+            alert('Failed to change TP!');
+        });
+    }
+
+    var changeHigh = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=high&value=' + $('#high_for_' + signal_id).val()).fail(function () {
+            alert('Failed to change High!');
+        });
+    }
+
+    var changeLow = function (signal_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=low&value=' + $('#low_for_' + signal_id).val()).fail(function () {
+            alert('Failed to change Low!');
+        });
+    }
+
+    var toggleAccount = function (signal_id, account_id) {
+        $.get('/action?signal_id=' + signal_id + '&action=toggle_account&value=' + account_id).fail(function () {
+            alert('Failed to change subscribed account!');
+        });
+    }
+
+    function min(a, b) {
+        return a < b ? a : b;
+    }
+    function max(a, b) {
+        return a > b ? a : b;
+    }
+    function roundScale(origVal) {
+        return Math.round(x.scale(origVal) / 25) * 25;
+    }
+</script>
+
+{% block js %}{% endblock js %}
+</body>
+</html>
+
+{% comment %}
+    <!-- Le styles -->
+    <link href="{{ STATIC_URL }}css/lib/bootstrap.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/lib/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/boo-extension.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/boo.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/boo-coloring.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/boo-utility.css" rel="stylesheet">
+{% endcomment %}
+
+{% comment %}
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ STATIC_URL }}js/lib/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/lib/jquery-ui.js"></script>
+    <script src="{{ STATIC_URL }}js/lib/jquery.cookie.js"></script>
+    <script src="{{ STATIC_URL }}js/lib/jquery.date.min.js"></script>
+    <script src="{{ STATIC_URL }}js/lib/jquery.mousewheel.js"></script>
+    <script src="{{ STATIC_URL }}js/lib/jquery.load-image.min.js"></script>
+    <script src="{{ STATIC_URL }}js/lib/jquery.hotkeys.js"></script>
+    <script src="{{ STATIC_URL }}js/lib/bootstrap/bootstrap.js"></script>
+
+    <!-- Plugins Bootstrap -->
+    <script src="{{ STATIC_URL }}plugins/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-wysihtml5/src/bootstrap-wysihtml5.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-fuelux/js/all-fuelux.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-daterangepicker/js/bootstrap-daterangepicker.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-toggle-button/js/bootstrap-toggle-button.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-fileupload/js/bootstrap-fileupload.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-rowlink/js/bootstrap-rowlink.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-progressbar/js/bootstrap-progressbar.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-select/bootstrap-select.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-multiselect/js/bootstrap-multiselect.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-bootbox/bootbox.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-modal/js/bootstrap-modalmanager.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-modal/js/bootstrap-modal.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-wizard/js/bootstrap-wizard.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-wizard-2/js/bwizard-only.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/bootstrap-image-gallery/js/bootstrap-image-gallery.min.js"></script>
+
+    <!-- Plugins Custom - Only example -->
+    <script src="{{ STATIC_URL }}plugins/pl-extension/google-code-prettify/prettify.js"></script>
+
+    <!-- Plugins Custom - System -->
+    <script src="{{ STATIC_URL }}plugins/pl-system/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-system/xbreadcrumbs/xbreadcrumbs.js"></script>
+
+    <!-- Plugins Custom - System info -->
+    <script src="{{ STATIC_URL }}plugins/pl-system-info/qtip2/dist/jquery.qtip.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-system-info/gritter/js/jquery.gritter.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-system-info/notyfy/jquery.notyfy.js"></script>
+
+    <!-- Plugins Custom - Content -->
+    <script src="{{ STATIC_URL }}plugins/pl-content/list/js/list.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-content/list/plugins/list.paging.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-content/jpages/js/jPages.js"></script>
+
+    <!-- Plugins Custom - Component -->
+    <script src="{{ STATIC_URL }}plugins/pl-component/fullcalendar/fullcalendar.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-component/rangeslider/jqallrangesliders.min.js"></script>
+
+    <!-- Plugins Custom - Form -->
+    <script src="{{ STATIC_URL }}plugins/pl-form/uniform/jquery.uniform.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-form/select2/select2.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-form/counter/jquery.counter.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-form/elastic/jquery.elastic.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-form/inputmask/jquery.inputmask.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-form/inputmask/jquery.inputmask.extensions.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-form/validate/js/jquery.validate.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-form/duallistbox/jquery.dualListBox.min.js"></script>
+
+    <!-- Plugins Custom - Gallery -->
+    <script src="{{ STATIC_URL }}plugins/pl-gallery/nailthumb/jquery.nailthumb.1.1.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-gallery/nailthumb/showLoading/js/jquery.showLoading.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-gallery/wookmark/jquery.imagesloaded.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-gallery/wookmark/jquery.wookmark.min.js"></script>
+
+    <!-- Plugins Tables -->
+    <script src="{{ STATIC_URL }}plugins/pl-table/datatables/media/js/jquery.dataTables.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-table/datatables/plugin/jquery.dataTables.plugins.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-table/datatables/plugin/jquery.dataTables.columnFilter.js"></script>
+
+    <!-- Plugins data visualization -->
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/sparkline/jquery.sparkline.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/easy-pie-chart/easy-pie-chart.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/percentageloader/percentageloader.min.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/knob/knob.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/flot/jquery.flot.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/flot/jquery.flot.categories.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/flot/jquery.flot.grow.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/flot/jquery.flot.orderBars.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/flot/jquery.flot.pie.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/flot/jquery.flot.resize.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/flot/jquery.flot.selection.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/flot/jquery.flot.stack.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/flot/jquery.flot.stackpercent.js"></script>
+    <script src="{{ STATIC_URL }}plugins/pl-visualization/flot/jquery.flot.time.js"></script>
+
+    <!-- main js -->
+    <script src="{{ STATIC_URL }}js/core.js"></script>
+    <script src="{{ STATIC_URL }}js/application.js"></script>
+
+    <!-- amcharts -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/amcharts/style.css" type="text/css">
+{% endcomment %}

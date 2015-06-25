@@ -1,0 +1,170 @@
+[
+  {
+    "pk": 16,
+    "model": "writer.system",
+    "fields": {
+      "name": "pin",
+      "created_at": "2013-06-21T23:07:01",
+      "is_active": true,
+      "updated_at": "2014-01-23T00:11:00",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "writer.system",
+    "fields": {
+      "name": "star",
+      "created_at": "2013-06-21T23:07:20",
+      "is_active": true,
+      "updated_at": "2014-01-23T00:21:05",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "writer.system",
+    "fields": {
+      "name": "double_m",
+      "created_at": "2013-06-26T20:04:20",
+      "is_active": true,
+      "updated_at": "2014-01-23T00:21:09",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "writer.system",
+    "fields": {
+      "name": "triple_m",
+      "created_at": "2013-11-17T23:42:03",
+      "is_active": true,
+      "updated_at": "2014-01-23T00:21:13",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "writer.system",
+    "fields": {
+      "name": "pin_divergence",
+      "created_at": "2014-01-12T19:57:50",
+      "is_active": true,
+      "updated_at": "2014-01-21T00:16:38",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "writer.system",
+    "fields": {
+      "name": "pin_v2",
+      "created_at": "2014-01-12T19:58:01",
+      "is_active": true,
+      "updated_at": "2014-01-21T00:16:35",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "writer.system",
+    "fields": {
+      "name": "engulfing",
+      "created_at": "2014-01-22T21:20:36",
+      "is_active": true,
+      "updated_at": "2014-01-23T00:21:16",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "writer.system",
+    "fields": {
+      "name": "pin_pin",
+      "created_at": "2014-01-30T17:07:38",
+      "is_active": true,
+      "updated_at": "2014-01-30T17:07:38",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "writer.system",
+    "fields": {
+      "name": "double_cm",
+      "created_at": "2014-02-06T01:01:00",
+      "is_active": true,
+      "updated_at": "2014-02-06T01:01:00",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "writer.system",
+    "fields": {
+      "name": "triple_cm",
+      "created_at": "2014-02-06T01:01:12",
+      "is_active": true,
+      "updated_at": "2014-02-06T01:01:12",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "writer.system",
+    "fields": {
+      "name": "double_pin",
+      "created_at": "2014-02-11T22:49:41",
+      "is_active": true,
+      "updated_at": "2014-02-11T22:49:41",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "writer.system",
+    "fields": {
+      "name": "double_pin_div",
+      "created_at": "2014-02-11T22:49:53",
+      "is_active": true,
+      "updated_at": "2014-02-11T22:49:53",
+      "notify_by_mail": true,
+      "notify_by_chat": true,
+      "store_in_gdocs": true,
+      "version": "1"
+    }
+  }
+]
