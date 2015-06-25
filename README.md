@@ -1,4 +1,4 @@
-fserver
+Forex Signal Server
 =======
 
 - collects signals from many sources
